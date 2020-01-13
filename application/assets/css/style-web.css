@@ -1,0 +1,647 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+nav {
+    /*background: linear-gradient(to bottom, dimgray 1px, white, transparent 90%);*/
+    height: 150px;
+}
+
+.left {
+    position: absolute;
+    float: left;
+}
+
+/*.right {*/
+
+/*float: right;*/
+/*}*/
+
+.logo img {
+    position: relative;
+    height: 100px;
+}
+
+.navbar-nav {
+    /*display: inline-flex;*/
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(35grad, rgba(0, 0, 0, 0) 50%, rgba(54, 54, 54, 0.9));
+}
+
+
+
+
+.nav-item {
+    height: auto;
+    max-width: 1500px;
+    width: 100%;
+    position: absolute;
+    font: 67.5% bold, "Verdana", sans-serif;
+
+}
+
+.menulist ul {
+    position: relative;
+    vertical-align: bottom;
+    float: right;
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+    margin-right: 25px;
+
+}
+
+.menulist a {
+    float: left;
+    color: #ff0000;
+    width: 150px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 26px;
+    margin-top: 5%;
+    /*margin: 0;*/
+    /*background-color: rgba(54, 54, 54, 0.9);*/
+
+}
+
+.menulist a:hover {
+    color: white;
+    transition: all 0.5s;
+    background-color: #dddddd;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+    box-shadow: 7px 7px 25px rgba(54, 54, 54, 1);
+
+}
+
+
+
+.content {
+    margin: 0 3% 0 5%;
+    display: flex;
+    min-height: 100vh;
+    /*border-left: 1px solid black;*/
+}
+
+.contentst {
+    color: rgba(11, 11, 10, 0.82);
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 22px;
+    text-align: justify;
+    max-width: 800px;
+}
+
+.content img {
+    width: 100%;
+}
+
+.contentblog p {
+    margin: 25px;
+}
+
+.content article {
+    font-size: 24px;
+    max-width: 800px;
+    text-align: justify;
+    text-indent: 3ch;
+    /*border-bottom: 1px solid #1f88cc;*/
+    border-top: 1px solid #1f88cc;
+    border-radius: 3%;
+    margin-bottom: 5%;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.1));
+    position: relative;
+}
+
+.badge {position: relative}
+.badge img {
+    position: absolute;
+    content: icon;
+    top: -10px;
+    right: -10px;
+    font-size: .7em;
+    background: #1f88cc;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+
+}
+
+
+.description {
+    visibility: hidden;
+    right: 0;
+}
+
+.badge:hover .description {
+    visibility: visible;
+    /*position: absolute;*/
+
+}
+
+h1 {
+    max-width: 800px;
+    color: #5c5c74;
+    font-size: 55px;
+}
+
+h2 {
+    color: #1f88cc;
+    text-shadow: #5c5c74;
+    display: block;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 36px;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    display: inline;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#cont-form input[type=submit] {
+    background-color: rgba(111, 111, 111, 0.82);
+    color: crimson;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#cont-form input[type=submit]:hover {
+    color: #f2f2f2;
+    transition: all 0.5s;
+    border: 3px solid;
+    border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+    box-shadow: 7px 7px 20px rgba(54, 54, 54, 1);
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    max-width: 700px;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/*box>items>tikblock*/
+.grid {
+    margin: 25px;
+    display: flex;
+    width: 70%;
+    min-width: 1100px;
+}
+
+.grid-box {
+    width: 100%;
+    display: block;
+    background: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*box pentru selector*/
+
+.tickblock-pic {
+    max-width: 300px;
+    margin: 5px
+}
+.tickblock-pic img{width: 100%}
+
+
+table {
+    /*margin: 10%;*/
+    /*padding: 25px;*/
+    font-size: 16px;
+    display: table;
+    border-collapse: collapse;
+
+}
+
+.tableprice {
+    opacity: 0;
+    /*margin: 15px;*/
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 300px;
+}
+
+.tickblock:hover {
+    font-family: fantasy;
+    font-size: 26px;
+    text-decoration: #1f88cc;
+    display: block;
+    margin: 15px;
+    /*background: #ff0000;*/
+    position: relative;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-image: linear-gradient(35grad, rgba(0, 0, 0, 0) 50%, rgba(54, 54, 54, 0.9))
+}
+
+tr:nth-child(even) {
+    background-image: linear-gradient(210grad, rgba(0, 0, 0, 0) 50%, rgba(54, 54, 54, 0.9))
+}
+
+td {
+    min-width: 150px;
+    text-align: center;
+}
+
+/*selector services*/
+.tickblock {
+    /*width: 100%;*/
+    font-family: fantasy;
+    font-size: 26px;
+    text-decoration: #1f88cc;
+    display: block;
+    margin: 15px;
+    /*background: #ff0000;*/
+    position: relative;
+}
+
+.tickblock-cont {
+    display: flex;
+    border-bottom-style: groove;
+    /*width: auto;*/
+}
+
+.tickblock-slide {
+    display: flex;
+    border-bottom-style: groove;
+}
+
+
+
+#subject {
+    height: 170px;
+}
+
+#ring:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-style: none;
+}
+#ring:hover .tableprice{opacity: 1;}
+#slide:hover {
+    /*min-width: 1000px;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-style: none;
+}
+#slide:hover .tableprice{opacity: 1;}
+#down:hover {
+    /*min-width: 1000px;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-style: none;
+}
+#down:hover .tableprice{opacity: 1;}
+/*afisare doar pentru desktop version*/
+.mapdesk {
+    margin-top: 25px;
+    w
+}
+
+.mapdesk:hover {
+    box-shadow: 45px 7px 20px rgba(54, 54, 54, 1);
+}
+
+/*afisare doar pe telefon*/
+.mapmob {
+    display: none;
+}
+
+.rtitle {
+    font-size: 36px;
+    list-style: circle;
+}
+
+
+.ulist a {
+    list-style: none;
+    text-decoration: underline;
+}
+
+
+.side {
+    position: relative;
+    min-width: 140px;
+    margin: 0 10px 0 10px;
+
+}
+
+.cube {
+    /*margin: 5%;*/
+    float: right;
+    list-style: none;
+    }
+
+.cubepos {
+    list-style: none;
+    font-size: 18px;
+    line-height: 35px;
+    width: auto;
+    position: fixed;
+    max-width: 300px;
+}
+
+.cubepos ul {
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 7px;
+
+}
+
+.artbox {
+    margin-bottom: 40px;
+    width: auto;
+    border-bottom: 1px solid #1f88cc;
+    border-radius: 3%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 1));
+}
+
+.tagbox {
+    margin-bottom: 40px;
+    width: auto;
+    border-bottom: 1px solid #1f88cc;
+    border-radius: 3%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 1));
+}
+
+.tagbox ul {
+    /*display: flex;*/
+    margin: 0;
+}
+
+.imgtop {
+    display: none
+}
+
+.imghome {
+    display: none
+}
+
+.imgcont {
+    display: none
+}
+
+.imgticket {
+    display: none
+}
+
+.imgfb {
+    display: none
+}
+
+.cube h3 {
+    text-indent: 3ch;
+    text-align: center;
+}
+
+.tagbox a {
+    margin: 15px;
+    text-align: inherit;
+    line-height: 15px;
+}
+
+.list a {
+    text-decoration: solid;
+}
+
+.list a:visited {
+    text-decoration: solid;
+    /*margin: 15px;*/
+}
+
+footer {
+    margin: 0;
+}
+
+.tablefoot {
+    display: table;
+    /*width: 100%;*/
+    padding: 25px 200px;
+    height: 50px;
+    background-image: linear-gradient(235grad, rgba(0, 0, 0, 0) 20%, rgba(54, 54, 54, 0.9));
+    margin: 0;
+
+}
+
+.tablerow {
+    padding-left: 15%;
+    max-width: 1000px;
+    display: table-row;
+    box-sizing: border-box;
+
+}
+
+.tablecell {
+    border: 1px red;
+    font-size: 18px;
+    display: table-cell;
+    vertical-align: top;
+    list-style: none;
+    width: 500px;
+}
+
+.tablecell a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 500px) {
+
+    .content h1 {font-size: 20px;}
+
+    .content h2 {font-size: 14px}
+
+    .content {margin: 2%;display: block}
+
+    .content p {  font-size: 14px;  margin: 7px  }
+
+    .content article {  font-size: 12px;  border: none;  }
+
+    .menu {  height: 50px;  background-image: linear-gradient(35grad, white 50%, black);  min-width: 380px;  }
+
+    .menu a {  width: auto;  font-size: 14px;}
+
+    .left {  width: 30%  }
+
+    .left img {  width: 50%;  height: 50%  }
+
+    nav {  height: 50px  }
+
+    footer {  height: 100px  }
+    .grid {height: 100vh}
+    .tablefoot {  padding: 0;  font-size: 10%;  text-align: center  }
+
+    .tablefoot a {  height: 100%  }
+
+    .tablefoot h3 {  margin: 3%  }
+
+    .side {  padding: 3px;  position: relative  }
+
+    .cube {  line-height: normal;  margin-right: 2%;  width: auto;  float: none  }
+
+    .cubepos {  margin: 0 5px 0 0;  width: 500px;  position: relative  }
+
+    .cube h3 {  margin: 3px;  text-indent: 0;  }
+
+    .tagbox {  text-align: center;  width: 260px;  }
+
+    .tagbox ul {  list-style: none;  text-align: center;  display: flex;  }
+
+    .tagbox span.top {  display: none  }
+
+    .tagbox img {  width: 45px  }
+
+    .tagbox span.imgtop {  display: inline-block  }
+
+    .tagbox span.home {  display: none  }
+
+    .tagbox span.imghome {  display: inline-block  }
+
+    .tagbox span.cont {  display: none  }
+
+    .tagbox span.imgcont {  display: inline-block  }
+
+    .tagbox span.ticket {  display: none  }
+
+    .tagbox span.imgticket {  display: inline-block  }
+
+    .tagbox span.fb {  display: none  }
+
+    .tagbox span.imgfb {  display: inline-block  }
+
+    .cube ul {  padding: 0;  margin: 0;  }
+
+    .tagbox a {  margin: 3px  }
+
+    .artbox {  display: none  }
+
+    .mapdesk {  display: none  }
+
+    .mapmob {  margin-top: 25px;  display: inline  }
+
+    #cont-form input[type=submit] {  width: 80px;margin-bottom: 25px  }
+
+    .tickblock {  display: block  }
+
+    .tikblock ul {  font-size: 16px  }
+    .tableprice{opacity: 1;width: 30%;height: auto}
+    .tickblock-cont{display: block}
+    .tickblock-pic {display: none}
+    .tickblock-list {width: 100%}
+    .tickblock-list h3 {margin: 0 15px 0 15px }
+    .rtitle {font-size: 26px;color: #1f88cc}
+    .tickblock-list li {width: 100px;margin: 10px;display: none}
+    .tickblock-list a{margin: 15px;}
+    .tickblock-list ul li a {vertical-align: middle}
+
+    .grid{margin: 1px;width: 100%;min-width: unset}
+    .grid-box{padding: 0;min-width: unset}
+    .mapmob {width: 490px;height:500px}
+    .mapmob iframe{width: 100%;}
+
+}
+@media print {
+    nav{display: none}
+    .side {display: none}
+    footer {display: none}
+    .badge {display: none}
+    .articles{max-width: 100%}
+    .content {margin: 0}
+    article {height: 100%; page-break-after: always;margin: 3px}
+    h1 {font-size: 32px }
+}
+@media
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi){
+    /* Retina-specific stuff here */
+}
+@media (min-width: 501px) and  (max-width: 1000px){
+    h1 {font-size: 38px}
+    h2 {font-size: 30px}
+    .contentblog p{margin: 5px}
+    .side{width: 0}
+    .cube {float: none}
+    .menu {  height: 50px;  background-image: linear-gradient(35grad, white 50%, black);  min-width: 380px;  }
+
+    .menu a {  width: auto;  font-size: 22px;}
+    .menu {  height: 100px;  background-image: linear-gradient(35grad, white 50%, black);  min-width: 380px;  }
+    nav {  height: 100px  }
+    .left {  width: 30%  }
+
+    .left img {  width: 50%;  height: 50%  }
+
+    .tagbox {  text-align: center;  width: 150px;  }
+
+    .tagbox ul {  list-style: none;  text-align: center;}
+
+    .tagbox span.top {  display: none  }
+
+    .tagbox img {  width: 45px  }
+
+    .tagbox span.imgtop {  display: inline-block  }
+
+    .tagbox span.home {  display: none  }
+
+    .tagbox span.imghome {  display: inline-block  }
+
+    .tagbox span.cont {  display: none  }
+
+    .tagbox span.imgcont {  display: inline-block  }
+
+    .tagbox span.ticket {  display: none  }
+
+    .tagbox span.imgticket {  display: inline-block  }
+
+    .tagbox span.fb {  display: none  }
+
+    .tagbox span.imgfb {  display: inline-block  }
+}
